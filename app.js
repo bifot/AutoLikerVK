@@ -18,7 +18,7 @@ var res = request('GET', url);
 var body = JSON.parse(res.getBody());
 var items = body.response.items;
 
-for (var i = 300, j = items.length; i < j; i++) {
+for (var i = 0, j = items.length; i < j; i++) {
   let photoId = items[i].id;
 
   setTimeout(() => {
