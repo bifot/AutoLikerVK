@@ -1,0 +1,29 @@
+{
+  "name": "autolikervk",
+  "version": "1.0.0",
+  "description": "Можно лайкать фотографии пользователя автоматически в трех альбомах.",
+  "main": "app.js",
+  "dependencies": {
+    "sync-request": "^3.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bifot/AutoLikerVK.git"
+  },
+  "keywords": [
+    "vk",
+    "milena",
+    "likes",
+    "photos"
+  ],
+  "author": "Mikhail Semin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bifot/AutoLikerVK/issues"
+  },
+  "homepage": "https://github.com/bifot/AutoLikerVK#readme"
+}
