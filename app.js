@@ -18,7 +18,7 @@ var res = request('GET', url);
 var body = JSON.parse(res.getBody());
 var items = body.response.items;
 
-for (var i = 0, j = items.length; i < j; i++) {
+for (var i = 300, j = items.length; i < j; i++) {
   let photoId = items[i].id;
 
   setTimeout(() => {
@@ -32,8 +32,7 @@ for (var i = 0, j = items.length; i < j; i++) {
       console.log(`Лайк поставлен. Всего лайков на фотографии: ${body.response.likes}`);
       console.log(`Фотография => ${photoURL}`);
     } else {
-      console.log('Ошибка.');
-      console.log(body);
+      console.log(`Ошибка: ${body.error.error_msg}`);
     }
-  }, i * 2000);
+  }, i * 3000);
 }
