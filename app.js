@@ -28,7 +28,7 @@ for (var i = 0, j = items.length; i < j; i++) {
 
     var photoURL = `https://vk.com/photo${id}_${photoId}`;
 
-    if (body.response.likes) {
+    if (body.response) {
       console.log(`Лайк поставлен. Всего лайков на фотографии: ${body.response.likes}`);
       console.log(`Фотография => ${photoURL}`);
     } else {
