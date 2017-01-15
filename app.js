@@ -1,6 +1,6 @@
 var request = require('sync-request');
 
-var token = '354542de699a61f6563548096d41b8507620a93ab3237a15be7ea15de0af876d0741031bd581bf848b77a';
+var token = '';
 var profile = 'bifot';
 var album = 'saved';
 
