@@ -4,7 +4,7 @@
   "description": "Можно лайкать фотографии пользователя автоматически в трех альбомах.",
   "main": "app.js",
   "dependencies": {
-    "sync-request": "^3.0.1"
+    "request": "^2.79.0",
   },
   "devDependencies": {},
   "scripts": {
