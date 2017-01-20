@@ -1,6 +1,6 @@
 var request = require('sync-request');
 
-var token = '';
+var token = 'TOKEN';
 var profile = 'bifot';
 var album = 'saved';
 
@@ -18,8 +18,8 @@ var res = request('GET', url);
 var body = JSON.parse(res.getBody());
 var items = body.response.items;
 
-for (var i = 0, j = items.length; i < j; i++) {
-  let photoId = items[i].id;
+items.forEach((photo, index) => {
+  let photoId = photo.id;
 
   setTimeout(() => {
     var url = `https://api.vk.com/method/likes.add?type=photo&owner_id=${id}&item_id=${photoId}&access_token=${token}&v=5.60`;
@@ -34,5 +34,5 @@ for (var i = 0, j = items.length; i < j; i++) {
     } else {
       console.log(`Ошибка: ${body.error.error_msg}`);
     }
-  }, i * 3000);
-}
+  }, index * 3000);
+});
