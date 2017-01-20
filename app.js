@@ -1,6 +1,6 @@
 var request = require('sync-request');
 
-var token = 'TOKEN';
+var token = '';
 var profile = 'bifot';
 var album = 'saved';
 
