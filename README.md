@@ -7,9 +7,9 @@
 ### Установка
 
 ```
-$ git clone https://github.com/bifot/AutoLikerVK
-$ git cd AutoLikerVK
-$ npm install
+$ git clone https://github.com/bifot/vk-auto-liker.git
+$ git cd vk-auto-liker
+$ npm i
 ```
 
 ### Использование
@@ -21,13 +21,13 @@ $ npm install
 Полученный токен вставляете в переменную `token`:
 
 ```javascript
-var token = 'b4f62ec4e26098a4efd157a155b01230cc466355277d48df2317b0597d43fa36fb0b694bc50f6496a516c';
+const token = 'b4f62ec4e26098a4efd157a155b01230cc466355277d48df2317b0597d43fa36fb0b694bc50f6496a516c';
 ```
 
 Затем вам нужно определиться с пользователем, чьи фотографии вы будете лайкать. Введите его **id** в переменную `profile`:
 
 ```javascript
-var profile = 'bifot';
+const profile = 'bifot';
 ```
 
 Последнее, что осталось — выбрать альбом, который лайкать. Доступно три альбома:
@@ -39,7 +39,7 @@ var profile = 'bifot';
 Выбираем, например, **сохраненные фотографии**:
 
 ```javascript
-var album = 'saved';
+const album = 'saved';
 ```
 
 ### Запуск
